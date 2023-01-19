@@ -12,7 +12,6 @@
 	<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
 	<script>
         vkBridge.send("VKWebAppInit", {});
-        console.log('Реклама показана',vkbridge);
         bridge.send('VKWebAppShowNativeAds', { ad_format: 'interstitial' })
             .then((data) => {
                 if (data.result)
